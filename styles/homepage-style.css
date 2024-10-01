@@ -1,0 +1,77 @@
+body{
+    background-image: url("../assets/chanyeol.jpg");
+    background-repeat:no-repeat;
+    background-size : cover;
+    overflow: scroll; }
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul .links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+.navbar img{
+    flex-wrap: wrap;
+    float:right;
+    max-width: 20vw;
+    max-height: 15vh;
+    margin-left: auto;
+
+
+}
+.navbar img:hover{
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+
+}
+
+@keyframes shake {
+    0% {-webkit-transform: rotate(10deg);}
+    25% {-webkit-transform: rotate(-10deg);}
+    50% {-webkit-transform: rotate(20deg);}
+    75% {-webkit-transform: rotate(-5deg);}
+    100% {-webkit-transform: rotate(0deg);}
+  }
+
+.navbar li{
+    display:inline;
+    float:left;
+    background-color: #333;
+    opacity: 0.5;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:"Poppins";
+    font-size: 30px;
+  }
+
+li a:hover {
+    background-color: #111;
+}
+
+footer {
+    bottom: 0;
+    left:0;
+    position: fixed;
+    background-color: #6d6b6b;
+    
+width: 100%;
+  }
